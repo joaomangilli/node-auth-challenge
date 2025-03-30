@@ -1,0 +1,9 @@
+<h1>Vehicles</h1>
+
+<a href="/vehicles/create">New Vehicle</a>
+
+<ul>
+  <% vehicles.forEach((vehicle) => { %>
+    <%- include('_vehicle', { vehicle }) %>
+  <% }) %>
+</ul>

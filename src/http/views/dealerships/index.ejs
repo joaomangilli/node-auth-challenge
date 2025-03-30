@@ -1,0 +1,9 @@
+<h1>Dealerships</h1>
+
+<a href="/dealerships/create">New Dealership</a>
+
+<ul>
+  <% dealerships.forEach((dealership) => { %>
+    <%- include('_dealership', { dealership }) %>
+  <% }) %>
+</ul>
